@@ -1,0 +1,22 @@
+sonaqube is a code quality analysyi tool 
+the default port is 900o
+sonarqube needs at least 4gig ram 
+install java mostly 1.8 ,  yum install java-1.8* on a linux/redhat/ instance 
+import sonar.repo either by using ;
+wget -O /etc/yum.repos.d/sonar.repo http://downloads.sourceforge.net/project/sonar-pkg/rpm/sonar.repo 
+
+OR 
+
+create a file in /etc/yum.repos.d -- that is where the repos needs to be and add 
+[sonar]
+name=Sonar
+baseurl=http://downloads.sourceforge.net/project/sonar-pkg/rpm
+gpgcheck=0
+
+both steps worrk 
+
+next install sonar , yum/dnf install sonar 
+
+start sonar service with  *service sonar start* and you can verify it works 
+
+

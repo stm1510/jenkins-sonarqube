@@ -14,7 +14,8 @@ sudo yum upgrade -y
 
 sudo yum install -y https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.rpm
 
-sudo yum install -y java-11-amazon-corretto-devel
+#sudo yum install -y java-11-amazon-corretto-devel
+sudo yum install java-11-amazon-corretto-devel
 
 
 sudo yum install jenkins -y

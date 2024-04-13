@@ -17,6 +17,8 @@ both steps worrk
 
 next install sonar , yum/dnf install sonar 
 
-start sonar service with  *service sonar start* and you can verify it works 
+start sonar service with  *service sonar start* and you can verify it works status to check 
+make sure you have maven installed on jenkins server , yum install maven 
+
 
 

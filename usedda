@@ -1,0 +1,35 @@
+#!/bin/bash 
+
+
+sudo yum update –y
+
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+sudo yum upgrade -y 
+
+sudo yum install -y https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.rpm
+
+sudo yum install -y java-11-amazon-corretto-devel
+
+
+sudo yum install jenkins -y
+
+
+sudo systemctl enable jenkins
+
+
+sudo systemctl start jenkins
+
+mkdir /tmp/ssm
+cd /tmp/ssm
+wget https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/debian_amd64/amazon-ssm-agent.deb
+sudo dpkg -i amazon-ssm-agent.deb
+sudo systemctl enable amazon-ssm-agent
+
+
+

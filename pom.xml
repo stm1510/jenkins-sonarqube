@@ -26,11 +26,11 @@
             <version>4.0.0.RELEASE</version>
         </dependency>
         
-        <!-- Yet another vulnerable dependency -->
+        <!-- A different vulnerable version of Hibernate -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.0.5</version>
+            <version>3.2.7.ga</version>
         </dependency>
         
         <!-- Adding a vulnerable test dependency -->

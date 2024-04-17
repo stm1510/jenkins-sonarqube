@@ -68,7 +68,7 @@
     <!-- SonarQube Configuration -->
     <properties>
         <sonar.host.url>http://13.59.139.84:9000</sonar.host.url> <!-- Adjust the URL based on your SonarQube server -->
-        <!--sonar.login>your_sonarqube_token</sonar.login> <!-- Add your SonarQube token here -->
+        <!--sonar.login>your_sonarqube_token</sonar.login --> <!-- Add your SonarQube token here -->
     </properties>
 
 </project>

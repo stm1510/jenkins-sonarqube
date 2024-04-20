@@ -100,7 +100,7 @@
             </activation>
             <properties>
                 <!-- SonarQube server URL -->
-                <sonar.host.url>http://13.59.139.84:9000</sonar.host.url>
+                <sonar.host.url>http://3.14.129.46:9000/</sonar.host.url>
             </properties>
         </profile>
 
